@@ -29,6 +29,13 @@ p {
     font-weight: 300;
 }
 
+.p-service-desc
+{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
 h3 {
     color: #41464b;
     text-transform: uppercase;
@@ -53,6 +60,7 @@ h3 {
     height: 100%;
     display: table;
 }
+
 
 #home-content-box-inner {
     display: table-cell;
@@ -275,7 +283,6 @@ h3 {
 .img-wrapper img {
     -webkit-transition: -webkit-transform .5s ease;
     transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
     transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
