@@ -68,10 +68,10 @@
             alert("test-1");
             document.getElementById("test1").appendChild(this);
             // when image is loaded, add it to my div
-            //img.addEventListener("load", function(){
-            //    alert("test-2");
-            //    document.getElementById("work").appendChild(this);
-            //});
+            img.addEventListener("load", function(){
+                alert("test-2");
+                document.getElementById("work").appendChild(this);
+            });
             alert("test-3");
         }
         function back() {
