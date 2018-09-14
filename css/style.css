@@ -231,11 +231,11 @@ h3 {
 
 #about-bg-diagonal {
     width: 60%;
-    height: 700px;
+    height: 1000px;
     float: right;
     background-image: url(../img/bg-about-arch.jpg);
-    border-left: 200px solid #fff;
-    border-top: 700px solid transparent;
+    border-left: 100px solid #fff;
+    border-top: 900px solid transparent;
 }
 
 #about-content-box {
@@ -264,6 +264,7 @@ h3 {
 
 #about-desc p {
     margin-bottom: 30px;
+    font-weight: 400;
 }
 
 

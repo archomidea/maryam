@@ -43,6 +43,16 @@
     <!-- responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <script>
+        function sendMail() {
+            $.ajax({
+                url: "https://formspree.io/FORM_ID",
+                method: "POST",
+                data: {message: "hello!"},
+                dataType: "json"
+            });
+        }
+    </script>
 
 </head>
 
@@ -99,7 +109,7 @@
                 <div id="home-content-box-inner" class="text-center">
 <br><br><br>
                     <div id="home-heading" class="animated zoomIn">
-                        <h3>ARCHOMIDEA<br>PROFESSIONAL DESIGH AND DRAFTING</h3>
+                        <h3>ARCHOMIDEA<br>PROFESSIONAL DESIGN AND DRAFTING</h3>
                     </div>
                     <div id="home-btn" class="animated zoomIn">
                         <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#work" role="button" title="Protfolio">Portfolio</a>
@@ -313,63 +323,70 @@
                 <div class="row no-gutters wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/1.jpg" title="Work Description Goes Here">
+                            <a href="img/work/1.jpg" title="Landscape Design">
                                 <img src="img/work/1.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/2.jpg" title="Work Description Goes Here">
+                            <a href="img/work/2.jpg" title="Interior Design"\>
                                 <img src="img/work/2.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/3.jpg" title="Work Description Goes Here">
+                            <a href="img/work/3.jpg" title="3D">
                                 <img src="img/work/3.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/4.jpg" title="Work Description Goes Here">
+                            <a href="img/work/4.jpg" title="Architectural Design">
                                 <img src="img/work/4.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/5.jpg" title="Work Description Goes Here">
+                            <a href="img/work/5.jpg" title="Architectural Design">
                                 <img src="img/work/5.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/6.jpg" title="Work Description Goes Here">
+                            <a href="img/work/6.jpg" title="Interior Design">
                                 <img src="img/work/6.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/7.jpg" title="Work Description Goes Here">
+                            <a href="img/work/7.jpg" title="3D">
                                 <img src="img/work/7.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/8.jpg" title="Work Description Goes Here">
+                            <a href="img/work/8.jpg" title="Architectural Design">
                                 <img src="img/work/8.jpg" class="img-responsive" alt="Work">
                             </a>
                         </div>
                     </div>
 
                 </div>
-
+                <div id="more-work">
+                    <script>
+                        function more() {
+                            location.replace("./more-work.html")
+                        }
+                    </script>
+                    <button onclick="more()">More</button>
+                </div>
             </div>
         </div>
         <!-- End Content Box -->
@@ -393,7 +410,7 @@
                             <div id="customers-testimonials" class="text-center owl-carousel owl-theme">
 
                                 <div class="testimonial">
-                                    <img src="img/client/client-1.jpg" class="img-responsive img-circle" alt="testimonial">
+                                    <img src="img/client/client-1.png" class="img-responsive img-circle" alt="testimonial">
                                     <blockquote class="text-center">
                                         <p>De cernantur concursionibus do incididunt fore nostrud, quibusdam anim quorum ubi quae id aute sed eiusmod ita fore et expetendis irure dolore te legam e do an efflorescere, voluptate quo.</p>
                                     </blockquote>
@@ -406,7 +423,7 @@
                                 </div>
 
                                 <div class="testimonial">
-                                    <img src="img/client/client-2.jpg" class="img-responsive img-circle" alt="client" />
+                                    <img src="img/client/client-2.png" class="img-responsive img-circle" alt="client" />
                                     <blockquote class="text-center">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at pulvinar augue. Ut feugiat viverra pellentesque. Integer scelerisque malesuada orci in cursus. Fusce pellentesque urna quis risus rutrum, vitae blandit urna pharetra. Praesent nunc enim, pharetra sed erat nec.</p>
                                     </blockquote>
@@ -421,7 +438,7 @@
 
 
                                 <div class="testimonial">
-                                    <img src="img/client/client-3.jpg" class="img-responsive img-circle" alt="client" />
+                                    <img src="img/client/client-3.png" class="img-responsive img-circle" alt="client" />
                                     <blockquote class="text-center">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at pulvinar augue. Ut feugiat viverra pellentesque. Integer scelerisque malesuada orci in cursus. Fusce pellentesque urna quis risus rutrum, vitae blandit urna pharetra. Praesent nunc enim, pharetra sed erat nec.</p>
                                     </blockquote>
@@ -471,7 +488,7 @@
                                 <div id="phone-fax-email">
                                     <p>
                                         <strong>Phone:</strong><span> 604-653-5454 </span> <br>
-                                        <strong>Email:</strong><span>  mary@achromidea.com  </span> <br><br><br>
+                                        <strong>Email:</strong><span>  info@archomidea.com  </span> <br><br><br>
                                         Feel free to contact and request a quote for your project or your idea.<br>
                                         We will gladly arrange an appointment with you.
                                     </p>
@@ -496,20 +513,39 @@
                         <div id="contact-right">
 
                             <h3>Contact Us</h3>
-                            <form action="#">
+                            <!--
+                            <form id="contactform" method="POST">
+                                <input type="text" name="name" placeholder="Your name">
+                                <input type="email" name="_replyto" placeholder="Your email">
+                                <input type="hidden" name="_subject" value="Website contact" />
+                                <textarea name="message" placeholder="Your message"></textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <input type="submit" value="Send">
+                            </form>-->
 
+                            <form id="contactform" method="POST">
+                                <input type="text" name="_replyto" placeholder="Your email" class="form-control"/>
+                                <input type="hidden" name="_subject" value="Archomidea submission!" />
+                                <input type="hidden" name="_cc" value="maryarj88@yahoo.ca,adam@codabase.com" />
+                                <!--<input type="text" name="email" placeholder="Email Address" class="form-control">-->
                                 <input type="text" name="full-name" placeholder="Full Name" class="form-control">
-                                <input type="text" name="email" placeholder="Email Address" class="form-control">
                                 <input type="text" name="phone" placeholder="Phone Number" class="form-control">
                                 <input type="text" name="street" placeholder="Street Address" class="form-control">
                                 <input type="text" name="city" placeholder="City" class="form-control">
                                 <input type="text" name="state" placeholder="State/Province" class="form-control">
                                 <input type="text" name="zip" placeholder="Zip Code" class="form-control">
                                 <textarea rows="5" name="message" placeholder="Message..." class="form-control"></textarea>
-
+                                <input type="submit" value="Send"  class="form-control" role="button">
+                               <!--
                                 <div id="send-btn">
-                                    <a class="btn btn-lg btn-general btn-white" href="#" role="button">SEND</a>
-                                </div>
+                                    <a class="btn btn-lg btn-general btn-white" href="#" type="submit" onclick="sendMail()" role="button">SEND</a>
+
+                                </div>-->
+
+                                <script>
+                                    var contactform =  document.getElementById('contactform');
+                                    contactform.setAttribute('action', '//formspree.io/' + 'mary' + '@' + 'archomidea' + '.' + 'com');
+                                </script>
 
                             </form>
 
