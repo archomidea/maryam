@@ -42,18 +42,6 @@
 
     <!-- responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-
-    <script>
-        function sendMail() {
-            $.ajax({
-                url: "https://formspree.io/FORM_ID",
-                method: "POST",
-                data: {message: "hello!"},
-                dataType: "json"
-            });
-        }
-    </script>
-
 </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
@@ -79,7 +67,7 @@
                                 <li><a class="smooth-scroll" href="#home">Home</a></li>
                                 <li><a class="smooth-scroll" href="#services">Services</a></li>
                                 <li><a class="smooth-scroll" href="#about">About</a></li>
-                                <li><a class="smooth-scroll" href="#work">Portofolio</a></li>
+                                <li><a class="smooth-scroll" href="#work">Portfolio</a></li>
                                 <li><a class="smooth-scroll" href="#testimonials">Testimonials</a></li>
                                 <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                             </ul>
@@ -176,8 +164,8 @@
                                 </div>
 
                                  <p class="p-service-desc">
-                                    BP (Building Permit)<br>
-                                    DP (Development Permit)<br>
+                                    Building Permit<br>
+                                    Development Permit<br>
                                     Construction Drawings<br>
                                  </p>
                             </div>
@@ -187,7 +175,7 @@
                         <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
                             <div class="service-item-title">
-                                <h3> 3D Visualize and Rendering </h3>
+                                <h3> 3D Visualization and Rendering </h3>
                             </div>
                             <div class="row">
                                 <div class="col-md-7">
@@ -244,7 +232,9 @@
                                 </div>
 
                         <p class="p-service-desc">
-                            CAD drafting and paper to CAD conversion: We provide architectural CAD drafting services using software such as Sketch up up  and CAD for all stages of projects, including  planning,
+                            CAD drafting and paper to CAD conversion:<br>
+                            We provide architectural CAD drafting services using software such as Sketch up
+                            and CAD for all stages of projects, including  planning,
                             BP(Building Permit) and
                             DP( Development Permit)
                             Landscaping,
@@ -283,14 +273,14 @@
 
                                 <div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
                                 <p>
-                                    Archomidea is a Vancouver based company that provides drawing solutions in variety of fields such as,
+                                    Archomidea is a Vancouver based company that provides drawing solutions in variety of fields such as
                                    building drawings, interior design, landscape design and 3D visualizations.
                                 </p>
                                 </div>
 
                                 <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
-                                    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#work" role="button" title="View Work"> Portofolio </a>
+                                    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#work" role="button" title="View Work"> Portfolio </a>
 
                                 </div>
 
@@ -314,7 +304,7 @@
 
         <div class="content-box">
             <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                <h3> Portofolio </h3>
+                <h3> Portfolio </h3>
                 <div class="content-title-underline"></div>
             </div>
 
@@ -379,13 +369,13 @@
                     </div>
 
                 </div>
-                <div id="more-work">
+                <div  id="more-projects">
                     <script>
-                        function more() {
-                            location.replace("./more-work.html")
+                        function projects() {
+                            location.replace("./projects.html")
                         }
                     </script>
-                    <button onclick="more()">More</button>
+                    <button  onclick="projects()">More Projects</button>
                 </div>
             </div>
         </div>
@@ -413,7 +403,8 @@
                                     <img src="img/client/client-1.png" class="img-responsive img-circle" alt="testimonial">
                                     <blockquote class="text-center">
                                         <p>
-                                            Archomidea delivered extraordinary high-quality work. They offered creative solutions.
+                                            Archomidea delivered extraordinary high-quality work. They offered creative solutions
+                                            that we had never thought about before.
                                         </p>
                                     </blockquote>
                                     <div class="testimonial-author">
@@ -427,7 +418,7 @@
                                 <div class="testimonial">
                                     <img src="img/client/client-2.png" class="img-responsive img-circle" alt="client" />
                                     <blockquote class="text-center">
-                                        <p>Archomidea design team has been providing friendly and good services. Their ability to be creative was very impressive. </p>
+                                        <p>Archomidea design team has been cautiously providing friendly and good services and their ability to be creative was very impressive. </p>
                                     </blockquote>
                                     <div class="testimonial-author">
                                         <p>
@@ -443,7 +434,7 @@
                                     <blockquote class="text-center">
                                         <p>
                                             Thank you for your work in making our home a place that we truly love.
-                                            You listened to us, had patience with us. This is our dream home.
+                                            You listened to us and made our dream house.
                                         </p>
                                     </blockquote>
 
@@ -485,28 +476,21 @@
                             <div id="contact-info">
 
                                 <address>
-                                    <strong>Office Address:</strong><br>
+                              <!--      <strong>Office Address:</strong><br>
                                     <p>1234 Marine DR<br>
-                                    Vancouver, BC M9B-6B5</p>
+                                    Vancouver, BC M9B-6B5</p>-->
                                 </address>
                                 <div id="phone-fax-email">
                                     <p>
                                         <strong>Phone:</strong><span> 604-653-5454 </span> <br>
                                         <strong>Email:</strong><span>  info@archomidea.com  </span> <br><br><br>
-                                        Feel free to contact and request a quote for your project or your idea.<br>
+                                        Feel free to contact us and request a quote for your project or your idea.<br>
                                         We will gladly arrange an appointment with you.
                                     </p>
                                 </div>
 
                             </div>
 
-                            <!--
-                            <ul class="social-list">
-                                <li><a href="#" class="social-icon icon-white"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="social-icon icon-white"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="social-icon icon-white"><i class="fa fa-youtube-play"></i></a></li>
-                                <li><a href="#" class="social-icon icon-white"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>-->
 
                         </div>
 
@@ -517,15 +501,7 @@
                         <div id="contact-right">
 
                             <h3>Contact Us</h3>
-                            <!--
-                            <form id="contactform" method="POST">
-                                <input type="text" name="name" placeholder="Your name">
-                                <input type="email" name="_replyto" placeholder="Your email">
-                                <input type="hidden" name="_subject" value="Website contact" />
-                                <textarea name="message" placeholder="Your message"></textarea>
-                                <input type="text" name="_gotcha" style="display:none" />
-                                <input type="submit" value="Send">
-                            </form>-->
+
 
                             <form id="contactform" method="POST">
                                 <input type="text" name="_replyto" placeholder="Your email" class="form-control"/>
@@ -567,7 +543,7 @@
                     <div class="col-md-6">
 
                         <div id="footer-copyrights">
-                            <p>Copyrights &copy; 2017 All Rights Reserved by Achromidea Inc.</p>
+                            <p>Copyrights &copy; 2018 All Rights Reserved by Achromidea Inc.</p>
                         </div>
 
                     </div>
@@ -576,7 +552,7 @@
                             <ul>
                                 <li><a class="smooth-scroll" href="#home">Home</a>/</li>
                                 <li><a class="smooth-scroll" href="#services">Services</a>/</li>
-                                <li><a class="smooth-scroll" href="#work">Portofolio</a>/</li>
+                                <li><a class="smooth-scroll" href="#work">Portfolio</a>/</li>
                                 <li><a class="smooth-scroll" href="#testimonials">Testimonials</a>/</li>
                             </ul>
                         </div>

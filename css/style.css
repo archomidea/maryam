@@ -36,6 +36,11 @@ p {
     font-weight: 400;
 }
 
+.p-service-img
+{
+
+}
+
 h3 {
     color: #41464b;
     text-transform: uppercase;
@@ -61,6 +66,9 @@ h3 {
     display: table;
 }
 
+#more-projects {
+    float: right;
+}
 
 #home-content-box-inner {
     display: table-cell;
@@ -233,7 +241,7 @@ h3 {
     width: 60%;
     height: 1000px;
     float: right;
-    background-image: url(../img/bg-about-arch.jpg);
+    background-image: url(../img/bg-about-arch.png);
     border-left: 100px solid #fff;
     border-top: 900px solid transparent;
 }
