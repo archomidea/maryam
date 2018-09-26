@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- test -->
+
 <head>
 
     <!-- required meta tags -->
@@ -42,8 +42,34 @@
 
     <!-- responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script>
+        $(document).ready(function(){
+            $("#extraProjects").hide();
+            $("#prjExtraBtn").click(function(){
+                $("#extraProjects").show();
+            });
+            $("#prjExtraBtn").click(function(){
+                $("#extraProjects").hide();
+            });
+        });
+    </script>-->
+    <script type="text/javascript">
 
+        function toggleContent() {
+            // Get the DOM reference
+            var contentId = document.getElementById("contentId");
+            // Toggle
+            contentId.style.display == "block" ? contentId.style.display = "none" :
+                contentId.style.display = "block";
+        }
+        function hide() {
+            $("#contentId").hide();
+        }
+    </script>
+
+</head>
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
 
     <header>
@@ -72,16 +98,8 @@
                                 <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                             </ul>
                         </div>
-<!--
-                        <a href="#home">
-                            <img height="25px" width="135px" src="img/logo1.jpg" alt="logo1">
-                        </a>-->
                     </div>
-
-
-
                 </div>
-
             </div>
         </nav>
 
@@ -100,7 +118,7 @@
                         <h3>ARCHOMIDEA<br>PROFESSIONAL DESIGN AND DRAFTING</h3>
                     </div>
                     <div id="home-btn" class="animated zoomIn">
-                        <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#work" role="button" title="Protfolio">Portfolio</a>
+                        <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#work" role="button" title="Portfolio">Portfolio</a>
                     </div>
 
                 </div>
@@ -369,18 +387,289 @@
                     </div>
 
                 </div>
-                <div  id="more-projects">
-                    <script>
-                        function projects() {
-                            location.replace("./projects.html")
-                        }
-                    </script>
-                    <button  onclick="projects()">More Projects</button>
+                <button onclick="toggleContent()">Toggle Extra Projects</button>
+                <div id="contentId" class="row no-gutters wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/0.png" title="Landscape Design">
+                                <img src="img/extraProjects/0.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/1.png" title="Interior Design">
+                                <img src="img/extraProjects/1.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/2.png" title="Interior Design">
+                                <img src="img/extraProjects/2.png" class="img-responsive" alt="extraProjects">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/3.png" title="3D">
+                                <img src="img/extraProjects/3.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/4.png" title="Architectural Design">
+                                <img src="img/extraProjects/4.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/5.png" title="Architectural Design">
+                                <img src="img/extraProjects/5.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/6.png" title="Interior Design">
+                                <img src="img/extraProjects/6.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/7.png" title="3D">
+                                <img src="img/extraProjects/7.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/8.png" title="Architectural Design">
+                                <img src="img/extraProjects/8.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/9.png" title="Architectural Design">
+                                <img src="img/extraProjects/9.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/10.png" title="Architectural Design">
+                                <img src="img/extraProjects/10.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/11.png" title="Architectural Design">
+                                <img src="img/extraProjects/11.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/12.png" title="Architectural Design">
+                                <img src="img/extraProjects/12.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/13.png" title="Architectural Design">
+                                <img src="img/extraProjects/13.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/14.png" title="Architectural Design">
+                                <img src="img/extraProjects/14.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/15.png" title="Architectural Design">
+                                <img src="img/extraProjects/15.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/16.png" title="Architectural Design">
+                                <img src="img/extraProjects/16.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/17.png" title="Architectural Design">
+                                <img src="img/extraProjects/17.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/18.png" title="Architectural Design">
+                                <img src="img/extraProjects/18.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/19.png" title="Landscape Design">
+                                <img src="img/extraProjects/19.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/20.png" title="Interior Design">
+                                <img src="img/extraProjects/20.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/21.png" title="Interior Design">
+                                <img src="img/extraProjects/21.png" class="img-responsive" alt="extraProjects">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/22.png" title="3D">
+                                <img src="img/extraProjects/22.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/23.png" title="3D">
+                                <img src="img/extraProjects/23.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/24.png" title="Architectural Design">
+                                <img src="img/extraProjects/24.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/25.png" title="Architectural Design">
+                                <img src="img/extraProjects/25.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/26.png" title="Interior Design">
+                                <img src="img/extraProjects/26.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/27.png" title="3D">
+                                <img src="img/extraProjects/27.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/28.png" title="Architectural Design">
+                                <img src="img/extraProjects/28.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/29.png" title="Architectural Design">
+                                <img src="img/extraProjects/29.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/30.png" title="Architectural Design">
+                                <img src="img/extraProjects/30.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/31.png" title="Architectural Design">
+                                <img src="img/extraProjects/31.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/32.png" title="Architectural Design">
+                                <img src="img/extraProjects/32.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/13.png" title="Architectural Design">
+                                <img src="img/extraProjects/13.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/14.png" title="Architectural Design">
+                                <img src="img/extraProjects/14.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/15.png" title="Architectural Design">
+                                <img src="img/extraProjects/15.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/16.png" title="Architectural Design">
+                                <img src="img/extraProjects/16.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/17.png" title="Architectural Design">
+                                <img src="img/extraProjects/17.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="img/extraProjects/18.png" title="Architectural Design">
+                                <img src="img/extraProjects/18.png" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+        </div>
+
         </div>
         <!-- End Content Box -->
     </section>
+
+
 
     <!-- Testimonials -->
     <section id="testimonials">
@@ -543,7 +832,7 @@
                     <div class="col-md-6">
 
                         <div id="footer-copyrights">
-                            <p>Copyrights &copy; 2018 All Rights Reserved by Achromidea Inc.</p>
+                            <p>Copyrights &copy; 2018 All Rights Reserved by Archomidea Inc.</p>
                         </div>
 
                     </div>
