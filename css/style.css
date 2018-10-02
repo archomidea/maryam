@@ -203,7 +203,7 @@ h3 {
 .service-item {
     padding: 20px 0 20px 0;
     margin-bottom: 20px;
-    cursor: pointer;
+    cursor: default;
 }
 
 .service-item-icon i {
